@@ -1,0 +1,198 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.my-slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &__card {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: all .5s ease;
+        position: relative;
+        overflow: hidden;
+
+        @media(max-width: 960px) {
+            flex-direction: column;
+        }
+
+        &--description {
+            width: 40%;
+            transition: all .5s ease;
+
+            @media(max-width: 960px) {
+                position: absolute;
+                width: 80%;
+                bottom: -100%;
+            }
+        }
+
+        &--img {
+            width: 35%;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media(max-width: 960px) {
+                width: 80%;
+            }
+        }
+
+        .my-slider__description {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+
+            @media(max-width: 960px) {
+                display: block;
+            }
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__item {
+        text-transform: capitalize;
+    }
+}
+
+.my-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all .5s ease;
+    z-index: 1009;
+    overflow: hidden;
+
+    &__frame--rdp {
+        max-width: 1440px;
+        width: 100%;
+        height: 90%;
+        transition: all .5s ease;
+
+        @media (max-width: 960px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__frame--theyalow {
+        max-width: 1300px;
+        width: 100%;
+        height: 90%;
+        transition: all .5s ease;
+
+        @media (max-width: 960px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__frame--mobile--rdp {
+        max-width: 375px;
+        height: 667px;
+    }
+
+    &__frame--mobile--theyalow {
+        max-width: 640px;
+        height: 667px;
+    }
+
+    .my-modal__back {
+        display: block;
+        position: absolute;
+        right: 50px;
+        bottom: 150px;
+    }
+
+    .my-modal__mobile,
+    .my-modal__desktop {
+        display: block;
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+    }
+
+    @media (max-width: 960px) {
+
+        .my-modal__mobile,
+        .my-modal__desktop {
+            display: none;
+        }
+
+        .my-modal__back {
+            bottom: 75px;
+        }
+    }
+
+    .hidden-btn {
+        display: none;
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+
+.for_body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.show {
+    bottom: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    @media(max-width: 960px){
+        display: none !important;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.1;
+    }
+}
+
+.fade {
+    animation: fade 1s;
+}
+
+.fadeOut {
+    animation: fade 1s;
+}
