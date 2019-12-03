@@ -9,7 +9,6 @@ var mySwiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
-
 //my scripts
 
 let imgs = document.querySelectorAll('.my-slider__card--img'),
