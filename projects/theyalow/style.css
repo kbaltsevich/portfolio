@@ -2,8 +2,7 @@ body {
     position: relative;
     margin: 0 auto;
     max-width: 1300px;
-    width: 100%;
-    background-color: #fff;
+    width: 100%
 }
 
 .wrapper {
@@ -209,7 +208,6 @@ nav {
     -ms-flex-align: center;
     align-items: center;
     height: 212px;
-    background-color: #fff;
 }
 
 .item {
