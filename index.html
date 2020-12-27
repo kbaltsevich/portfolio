@@ -1,112 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Potfolio</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-
-    <title>portfolio</title>
-</head>
-
-<body class="wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col S6 m6 l4 xl4">
-                <img src="./assets/img/photo_2019-10-18_19-14-44.jpg" alt="" class="circle responsive-img">
-            </div>
-            <div class="col S6 m6 l8 xl8 left-align">
-                <h2>Kanstantsin Baltsevich</h2>
-                <h3><a href="https://github.com/kostielgreendevil">GitHub</a></h3>
-                <h3><a href="https://www.facebook.com/konstantsin.baltsevich">Facebook</a></h3>
-            </div>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Kanstantsin<br />Baltsevich</h1>
+      <div class="header__about">
+        <span>JS-developer</span>
+        <span>28 years old, Minsk</span>
+      </div>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="#" class="nav__title">home</a></li>
+          <li class="nav__item"><a href="#" class="nav__title">About me</a></li>
+          <li class="nav__item"><a href="#" class="nav__title">Skills</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__title">Portfolio</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__title">contacts</a></li>
+        </ul>
+        <div class="nav__lang">
+          <span class="lang__ru">ru</span>
+          <span>|</span>
+          <span class="lang__eng">eng</span>
         </div>
-        <div class="row">
-            <ul class="collapsible">
-                <li>
-                    <div class="collapsible-header"><i class="large material-icons">assignment_turned_in</i>Education
-                    </div>
-                    <div class="collapsible-body">
-                        <ul class="collection">
-                            <li class="collection-item">
-                                <h4>Belarusian State University of Informatics and Radioelectronics</h4>
-                                <h5>Telecommunications Engineer</h5>
-                                <h5>2010-2015</h5>
-                            </li>
-                            <li class="collection-item">
-                                <h4>RSSchool</h4>
-                                <h5>2019-...</h5>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="active">
-                    <div class="collapsible-header"><i class="large material-icons">business_center</i>Projects
-                    </div>
-                    <div class="collapsible-body">
-                        <div id="mySlider" class="swiper-container my-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide my-slider__card">
-                                    <div class="my-slider__card--description">
-                                        <ul class="collection with-header">
-                                            <li class="collection-header">
-                                                <h4 class="my-slider__title">Repair Design Project</h4>
-                                            </li>
-                                            <li class="collection-item my-slider__item">responsive</li>
-                                            <li class="collection-item my-slider__item">slide</li>
-                                            <li class="collection-item my-slider__item">svg</li>
-                                        </ul>
-                                    </div>
-                                    <img id="rdp" src="./assets/img/repair-design-project/MOBILE.png" alt=""
-                                        class="my-slider__card--img">
-                                    <button class="my-slider__description btn-floating btn-large waves-effect waves-light"><i class="material-icons">description</i></button>
-                                </div>
-                                <div class="swiper-slide my-slider__card">
-                                    <div class="my-slider__card--description">
-                                        <ul class="collection with-header">
-                                            <li class="collection-header">
-                                                <h4 class="my-slider__title">Theyalow</h4>
-                                            </li>
-                                            <li class="collection-item my-slider__item">responsive</li>
-                                            <li class="collection-item my-slider__item">slide</li>
-                                            <li class="collection-item my-slider__item">svg</li>
-                                        </ul>
-                                    </div>
-                                    <img id="theyalow" src="./assets/img/theyalow/THEYALOW mobile.jpg" alt=""
-                                        class="my-slider__card--img">
-                                        <button class="my-slider__description btn-floating btn-large waves-effect waves-light"><i class="material-icons">description</i></button>
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+      </nav>
+      <span class="header__burger">
+        <img
+          class="header__menu-img"
+          src="./img/angle-double-left-solid.svg"
+          alt=""
+          srcset=""
+        />
+      </span>
+      <div class="header__img"></div>
+    </header>
+    <main>
+      <section class="about-me">
+        <h2 class="about-me__title">about me</h2>
+        <p class="about-me__text">
+          Hi! I'm Kanstantsin - starter JS-developer from Minsk
+        </p>
+        <p class="about-me__text">
+          I'm studying at courses " The Rolling Scopes School"
+        </p>
+      </section>
+      <section class="skills">
+        <h2 class="skills__title">
+          Skills
+        </h2>
+        <div class="skills__card">
+          <img src="../img/JS.png" alt="img" class="skills__img" />
+          <p class="skills__name">Java Script</p>
+          <div class="skills__rating-result">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-    </div>
-    <div class="my-modal hidden rdp">
-        <button class="my-modal__back btn btn-large waves-effect waves-light">Back</button>
-        <button class="my-modal__mobile rdp btn btn-large waves-effect waves-light ">mobile</button>
-        <button class="my-modal__desktop rdp btn btn-large waves-effect waves-light hidden-btn">desktop</button>
-        <iframe class="my-modal__frame--rdp" src="./projects/repair-design-project/index.html" frameborder="0"></iframe>
-    </div>
-    <div class="my-modal hidden theyalow">
-        <button class="my-modal__back btn btn-large waves-effect waves-light">Back</button>
-        <button class="my-modal__mobile theyalow btn btn-large waves-effect waves-light ">mobile</button>
-        <button class="my-modal__desktop theyalow btn btn-large waves-effect waves-light hidden-btn">desktop</button>
-        <iframe class="my-modal__frame--theyalow" src="./projects/theyalow/index.html" frameborder="0"></iframe>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="script.js"></script>
-</body>
-
+      </section>
+      <section class="portfolio">
+        <h2 class="portfolio__title">
+          Portfolio
+        </h2>
+        <div class="portfolio__card">
+          <img src="./img/simple-piskel.png" alt="img" class="portfolio__img">
+          <a href="https://kostielgreendevil.github.io/simple-piskel-clone/" class="portfolio__url">Simple Piscel Clone</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="contacts"></section>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
 </html>
