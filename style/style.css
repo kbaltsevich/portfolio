@@ -99,7 +99,7 @@
 
 @media (min-width: 1000px) {
   .header__img {
-    height: 35vh;
+    height: 50vh;
   }
   .header__burger {
     display: none;
@@ -423,7 +423,7 @@
 
 @media (min-width: 1000px) {
   .header__img {
-    height: 35vh;
+    height: 50vh;
   }
   .header__burger {
     display: none;
