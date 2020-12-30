@@ -6,6 +6,11 @@
           box-sizing: border-box;
 }
 
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -66,6 +71,41 @@
           transform: rotate(180deg);
 }
 
+.header__lang {
+  display: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #828282;
+}
+
+@media (min-width: 768px) {
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__img {
+    margin: 12% 0;
+    background-position: 50% 50%;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header__img {
+    height: 35vh;
+  }
+  .header__burger {
+    display: none;
+  }
+}
+
 .nav {
   position: fixed;
   min-height: 100vh;
@@ -105,21 +145,60 @@
   margin: 0 0 2%;
 }
 
-.nav__item .active {
-  color: #000000;
-}
-
 .nav__title {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 34px;
-  color: #828282;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .nav__visible {
   left: 0;
+}
+
+.nav .active {
+  color: #000000;
+}
+
+@media (min-width: 1000px) {
+  .nav {
+    position: static;
+    min-height: 80px;
+    height: 100px;
+    border-bottom: 1px solid #828282;
+  }
+  .nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .nav__item {
+    margin: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .nav__item:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .nav__item:hover .nav__title {
+    color: green;
+  }
+  .nav__title {
+    text-transform: capitalize;
+    font-size: 20px;
+  }
 }
 
 .about-me {
@@ -163,6 +242,7 @@
 }
 
 .skills__card {
+  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,6 +256,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skills__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .skills__name {
@@ -217,6 +307,32 @@
 .skills__rating-result > span.active {
   color: #ffd904;
   text-shadow: 1px 1px #c60;
+}
+
+@media (min-width: 768px) {
+  .skills__img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .skills__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .skills__img {
+    max-width: 90px;
+    min-height: 90px;
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .header {
@@ -277,6 +393,41 @@
 .header__menu-img--rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.header__lang {
+  display: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #828282;
+}
+
+@media (min-width: 768px) {
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__img {
+    margin: 12% 0;
+    background-position: 50% 50%;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header__img {
+    height: 35vh;
+  }
+  .header__burger {
+    display: none;
+  }
 }
 
 .portfolio {
@@ -370,7 +521,7 @@
 }
 
 .contacts__url {
-  font-size: 40px;
+  font-size: 50px;
   text-decoration: none;
   color: #000000;
   -webkit-transition: all 0.5s ease;

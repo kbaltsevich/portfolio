@@ -46,4 +46,39 @@
       transform: rotate(180deg);
     }
   }
+
+  &__lang {
+    display: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    color: #828282;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__info{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__img{
+      margin: 12% 0;
+      background-position: 50% 50%;
+      height: 50vh;
+    }
+  }
+}
+
+@media (min-width: 1000px){
+  .header{
+    &__img{
+      height: 35vh;
+    }
+    &__burger{
+      display: none;
+    }
+  }
 }

@@ -12,71 +12,112 @@
   </head>
 
   <body>
-    <header class="header" id="home">
-      <h1 class="header__title">Kanstantsin<br />Baltsevich</h1>
-      <div class="header__about">
-        <span>JS-developer</span>
-        <span>28 years old, Minsk</span>
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li class="nav__item"><a href="#home" class="nav__title active">home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__title">About me</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__title">Skills</a></li>
+        <li class="nav__item">
+          <a href="#portfolio" class="nav__title">Portfolio</a>
+        </li>
+        <li class="nav__item"><a href="#contacts" class="nav__title">contacts</a></li>
+      </ul>
+      <div class="nav__lang">
+        <span class="lang__ru">ru</span>
+        <span>|</span>
+        <span class="lang__eng active">eng</span>
       </div>
-      <nav class="nav">
-        <ul class="nav__menu">
-          <li class="nav__item"><a href="#home" class="nav__title active">home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__title">About me</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__title">Skills</a></li>
-          <li class="nav__item">
-            <a href="#portfolio" class="nav__title">Portfolio</a>
-          </li>
-          <li class="nav__item"><a href="#contacts" class="nav__title">contacts</a></li>
-        </ul>
-        <div class="nav__lang">
-          <span class="lang__ru">ru</span>
-          <span>|</span>
-          <span class="lang__eng">eng</span>
+    </nav>
+    <header class="header" id="home">
+      <div class="wrapper">
+        <div class="header__info">
+          <h1 class="header__title">Kanstantsin<br />Baltsevich</h1>
+          <div class="header__about">
+            <span>JS-developer</span>
+            <span>28 years old, Minsk</span>
+          </div>
+          <div class="header__lang">
+            <span class="header__ru">ru</span>
+            <span>|</span>
+            <span class="header__eng active">eng</span>
+          </div>
         </div>
-      </nav>
-      <span class="header__burger">
-        <img
-          class="header__menu-img"
-          src="./img/angle-double-left-solid.svg"
-          alt=""
-          srcset=""
-        />
-      </span>
-      <div class="header__img"></div>
+        <span class="header__burger">
+          <img
+            class="header__menu-img"
+            src="./img/angle-double-left-solid.svg"
+            alt=""
+            srcset=""
+          />
+        </span>
+        <div class="header__img"></div>
+      </div>
     </header>
     <main>
       <section class="about-me" id="about">
-        <h2 class="about-me__title">about me</h2>
-        <p class="about-me__text">
-          Hi! I'm Kanstantsin - starter JS-developer from Minsk
-        </p>
-        <p class="about-me__text">
-          I'm studying at courses " The Rolling Scopes School"
-        </p>
+        <div class="wrapper">
+          <h2 class="about-me__title">about me</h2>
+          <p class="about-me__text">
+            Hi! I'm Kanstantsin - starter JS-developer from Minsk
+          </p>
+          <p class="about-me__text">
+            I'm studying at courses " The Rolling Scopes School"
+          </p>
+        </div>
       </section>
       <section class="skills" id="skills">
-        <h2 class="skills__title">Skills</h2>
-        <div class="skills__card">
-          <img src="../img/JS.png" alt="img" class="skills__img" />
-          <p class="skills__name">Java Script</p>
-          <div class="skills__rating-result">
-            <span class="active"></span>
-            <span class="active"></span>
-            <span class="active"></span>
-            <span></span>
-            <span></span>
+        <div class="wrapper">
+          <h2 class="skills__title">Skills</h2>
+          <div class="skills__wrapper">
+            <div class="skills__card">
+              <img src="../img/JS.png" alt="img" class="skills__img" />
+              <p class="skills__name">Java Script</p>
+              <div class="skills__rating-result">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="skills__card">
+              <img src="../img/JS.png" alt="img" class="skills__img" />
+              <p class="skills__name">Java Script</p>
+              <div class="skills__rating-result">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="skills__card">
+              <img src="../img/JS.png" alt="img" class="skills__img" />
+              <p class="skills__name">Java Script</p>
+              <div class="skills__rating-result">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="portfolio" id="portfolio">
-        <h2 class="portfolio__title">Portfolio</h2>
-        <div class="portfolio__card">
-          <img src="./img/simple-piskel.png" alt="img" class="portfolio__img" />
-          <a
-            href="https://kostielgreendevil.github.io/simple-piskel-clone/"
-            class="portfolio__url"
-            >Simple Piscel Clone</a
-          >
+        <div class="wrapper">
+          <h2 class="portfolio__title">Portfolio</h2>
+          <div class="portfolio__wrapper">
+            <div class="portfolio__card">
+              <img src="./img/simple-piskel.png" alt="img" class="portfolio__img" />
+              <a
+                href="https://kostielgreendevil.github.io/simple-piskel-clone/"
+                class="portfolio__url"
+                >Simple Piscel Clone</a
+              >
+            </div>
+          </div>
         </div>
       </section>
     </main>

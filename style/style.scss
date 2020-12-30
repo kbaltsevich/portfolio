@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 @import "./elements/_var";
 @import "./elements/_header";
 @import "./elements/_nav";
