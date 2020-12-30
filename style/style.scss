@@ -1,0 +1,20 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@import "./elements/_var";
+@import "./elements/_header";
+@import "./elements/_nav";
+@import "./elements/_about-me";
+@import "./elements/_skills";
+@import "./elements/_header";
+@import "./elements/_portfolio";
+@import "./elements/_contacts";
