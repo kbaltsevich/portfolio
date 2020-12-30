@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f0b846537d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Potfolio</title>
   </head>
 
@@ -16,7 +20,7 @@
       </div>
       <nav class="nav">
         <ul class="nav__menu">
-          <li class="nav__item"><a href="#" class="nav__title">home</a></li>
+          <li class="nav__item"><a href="#" class="nav__title active">home</a></li>
           <li class="nav__item"><a href="#" class="nav__title">About me</a></li>
           <li class="nav__item"><a href="#" class="nav__title">Skills</a></li>
           <li class="nav__item">
@@ -51,9 +55,7 @@
         </p>
       </section>
       <section class="skills">
-        <h2 class="skills__title">
-          Skills
-        </h2>
+        <h2 class="skills__title">Skills</h2>
         <div class="skills__card">
           <img src="../img/JS.png" alt="img" class="skills__img" />
           <p class="skills__name">Java Script</p>
@@ -67,17 +69,36 @@
         </div>
       </section>
       <section class="portfolio">
-        <h2 class="portfolio__title">
-          Portfolio
-        </h2>
+        <h2 class="portfolio__title">Portfolio</h2>
         <div class="portfolio__card">
-          <img src="./img/simple-piskel.png" alt="img" class="portfolio__img">
-          <a href="https://kostielgreendevil.github.io/simple-piskel-clone/" class="portfolio__url">Simple Piscel Clone</a>
+          <img src="./img/simple-piskel.png" alt="img" class="portfolio__img" />
+          <a
+            href="https://kostielgreendevil.github.io/simple-piskel-clone/"
+            class="portfolio__url"
+            >Simple Piscel Clone</a
+          >
         </div>
       </section>
     </main>
     <footer>
-      <section class="contacts"></section>
+      <section class="contacts">
+        <h2 class="contacts__title">Contacts</h2>
+        <p class="contacts__text">
+          Want to know more or just chat? You are welcome!
+        </p>
+        <div class="contacts__social">
+          <a href="#" class="contacts__url"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="contacts__url"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <a href="#" class="contacts__url"
+            ><i class="fab fa-github-square"></i
+          ></a>
+        </div>
+        <p class="contacts__social-text">
+          Like me on LinkedIn, Instagram, GitHub
+        </p>
+      </section>
     </footer>
     <script src="./main.js"></script>
   </body>
