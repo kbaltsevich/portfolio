@@ -1,0 +1,52 @@
+.nav {
+  position: fixed;
+  min-height: 100vh;
+  top: 0;
+  left: 400%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  background-color: #fff;
+
+  &__lang {
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    color: #828282;
+  }
+
+  &__menu {
+    width: 100%;
+    height: 90%;
+    padding: 5% 25px 5%;
+    overflow: hidden;
+    list-style: none;
+  }
+
+  &__item {
+    line-height: 42px;
+    margin: 0 0 2%;
+    & .active {
+      color: #000000;
+    }
+  }
+
+  &__title {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #828282;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__visible {
+    left: 0;
+  }
+}

@@ -68,10 +68,11 @@
 
 .nav {
   position: fixed;
+  min-height: 100vh;
   top: 0;
   left: 400%;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #fff;
@@ -80,14 +81,14 @@
 .nav__lang {
   position: absolute;
   right: 0;
-  bottom: 100px;
+  bottom: 150px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   text-transform: uppercase;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 38px;
   color: #828282;
 }
 
@@ -216,6 +217,66 @@
 .skills__rating-result > span.active {
   color: #ffd904;
   text-shadow: 1px 1px #c60;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  padding: 65px 25px 65px;
+  overflow: hidden;
+}
+
+.header__title {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 45px;
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.header__about {
+  margin: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #090909;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.header__img {
+  background-image: url("../img/photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+}
+
+.header__burger {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.header__menu-img {
+  width: 30px;
+  -webkit-transition: all 0.5s ease 0.1s;
+  transition: all 0.5s ease 0.1s;
+}
+
+.header__menu-img--rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .portfolio {
